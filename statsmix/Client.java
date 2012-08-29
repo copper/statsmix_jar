@@ -15,7 +15,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
-import net.sf.json.*;
+import net.sf.json.JSONObject;
 
 public class Client {
 	public String API_KEY;
