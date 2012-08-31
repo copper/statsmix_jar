@@ -3,20 +3,20 @@
 
 StatsMix - API access
 ========
-TODO statsmix info..?
+TODO statsmix info
 Download 
 --------
 The jar file: [statsmix.jar] [dl_jar] <br />
 It's dependencies: [statsmix-lib-dependencies.] [dl_dep]
 Usage 
 ------
-###Track Examples
-The track method sends a request to the track API, and returns the XML response as a string.  See www.statsmix.com/developers/documentation for more information.
-
+###Initialize
 Create a new StatsMix Client
 ```java
-StatsMix.Client smClient = new StatsMix.Client("YOUR_API_KEY");
+statsmix.Client smClient = new statsmix.Client("YOUR_API_KEY");
 ```
+###Track
+The track method sends a request to the track API, and returns the XML response as a string.  See www.statsmix.com/developers/documentation for more information.
 
 Basic Tracking.  Adds a new stat with default value of 1 to the metric.
 ```java
