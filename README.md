@@ -1,5 +1,6 @@
 [dl_jar]: https://github.com/downloads/mcclaskc/statsmix_jar/statsmix.jar
 [dl_dep]: https://github.com/downloads/mcclaskc/statsmix_jar/statsmix-lib-dependencies.tar.gz
+[track_exmpl]: https://github.com/mcclaskc/statsmix_jar/blob/master/examples/Track.java
 
 StatsMix
 ========
@@ -7,32 +8,18 @@ This java library offers easy access to the StatsMix API. See www.statsmix.com/d
 Download and Install
 --------------------
 The jar file: [statsmix.jar] [dl_jar] <br />
-It's dependencies: [statsmix-lib-dependencies.] [dl_dep] <br />
-Add these jars to your build path, and import them where necessary. 
-```java
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import net.sf.json.JSONObject;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
-
-import statsmix.*;
-```  
+It's dependencies: [statsmix-lib-dependencies.] [dl_dep] <br />  
 
 Usage 
 ------
 ###Initialize
 Create a new StatsMix Client
 ```java
-statsmix.Client smClient = new statsmix.Client("YOUR_API_KEY");
+import com.statsmix.*
+Client smClient = new Client("YOUR_API_KEY");
 ```
 ###Track
-The track method sends a request to the track API, and returns the XML response as a string.  
+The track method sends a request to the track API, and returns the XML response as a string. The following snippets were taken from [this example file.] [track_exmpl] 
 
 Basic Tracking.  Adds a new stat with default value of 1 to the metric.
 ```java
