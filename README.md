@@ -1,11 +1,31 @@
-#StatsMix Jar
-
-Download TODO Link
+StatsMix - API access
+========
+TODO statsmix info..?
+Download 
 --------
-Usage:  The track method sends a request to the track API, and returns the XML response as a string.  See www.statsmix.com/developers/documentation for more information.
+TODO Link
+Dependancies
+------------
+commons-beanutils
+commons-codec
+commons-collections
+commons-lang
+commons-logging
+ezmorph
+fluent-hc
+httpclient
+httpclient-cache
+httpcore
+httpmime
+json-lib
+Usage:  
 ------
+The track method sends a request to the track API, and returns the XML response as a string.  See www.statsmix.com/developers/documentation for more information.
+
 Create a new StatsMix Client
+```java
 StatsMix.Client smClient = new StatsMix.Client("YOUR_API_KEY");
+```
 
 Basic Tracking.  Adds a new stat with default value of 1 to the metric.
 ```java
