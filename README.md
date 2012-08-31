@@ -4,10 +4,12 @@
 StatsMix
 ========
 This java library offers easy access to the StatsMix API. See www.statsmix.com/developers/documentation for more information.
-Download 
---------
+Download and Install
+--------------------
 The jar file: [statsmix.jar] [dl_jar] <br />
-It's dependencies: [statsmix-lib-dependencies.] [dl_dep]
+It's dependencies: [statsmix-lib-dependencies.] [dl_dep] <br />
+Add these jars to your build path, and import them where necessary.   
+
 Usage 
 ------
 ###Initialize
