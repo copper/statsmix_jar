@@ -8,7 +8,21 @@ Download and Install
 --------------------
 The jar file: [statsmix.jar] [dl_jar] <br />
 It's dependencies: [statsmix-lib-dependencies.] [dl_dep] <br />
-Add these jars to your build path, and import them where necessary.   
+Add these jars to your build path, and import them where necessary. 
+```java
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import net.sf.json.JSONObject;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+
+import statsmix.*;
+```  
 
 Usage 
 ------
