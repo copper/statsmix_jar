@@ -19,7 +19,7 @@ import net.sf.json.JSONObject;
 
 public class Client {
 	public String API_KEY;
-	private static final String BASE_URL = "http://www.statsmix.com/api/v2/";
+	private static final String BASE_URL = "http://api.statsmix.com/api/v2/";
 
 	public Client(String api_key){
 		API_KEY = api_key;

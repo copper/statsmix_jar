@@ -1,5 +1,5 @@
-[dl_jar]: https://github.com/downloads/mcclaskc/statsmix_jar/statsmix.jar
-[dl_dep]: https://github.com/downloads/mcclaskc/statsmix_jar/statsmix-lib-dependencies.tar.gz
+[dl_jar]: https://www.statsmix.com/download/java/statsmix.jar
+[dl_dep]: https://www.statsmix.com/download/java/statsmix-lib-dependencies.tar.gz
 [track_exmpl]: https://github.com/mcclaskc/statsmix_jar/blob/master/examples/Track.java
 
 StatsMix
