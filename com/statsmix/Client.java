@@ -1,4 +1,4 @@
-package statsmix;
+package com.statsmix;
 
 import java.io.BufferedReader;
 import java.io.IOException;
