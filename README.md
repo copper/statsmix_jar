@@ -1,9 +1,9 @@
 [dl_jar]: https://github.com/downloads/mcclaskc/statsmix_jar/statsmix.jar
 [dl_dep]: https://github.com/downloads/mcclaskc/statsmix_jar/statsmix-lib-dependencies.tar.gz
 
-StatsMix - API access
+StatsMix
 ========
-TODO statsmix info
+This java library offers easy access to the StatsMix API. See www.statsmix.com/developers/documentation for more information.
 Download 
 --------
 The jar file: [statsmix.jar] [dl_jar] <br />
@@ -16,7 +16,7 @@ Create a new StatsMix Client
 statsmix.Client smClient = new statsmix.Client("YOUR_API_KEY");
 ```
 ###Track
-The track method sends a request to the track API, and returns the XML response as a string.  See www.statsmix.com/developers/documentation for more information.
+The track method sends a request to the track API, and returns the XML response as a string.  
 
 Basic Tracking.  Adds a new stat with default value of 1 to the metric.
 ```java
