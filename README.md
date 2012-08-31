@@ -1,25 +1,16 @@
+[dl_jar]: https://github.com/downloads/mcclaskc/statsmix_jar/statsmix.jar
+[dl_dep]: https://github.com/downloads/mcclaskc/statsmix_jar/statsmix-lib-dependencies.tar.gz
+
 StatsMix - API access
 ========
 TODO statsmix info..?
 Download 
 --------
-TODO Link
-Dependancies
-------------
-commons-beanutils
-commons-codec
-commons-collections
-commons-lang
-commons-logging
-ezmorph
-fluent-hc
-httpclient
-httpclient-cache
-httpcore
-httpmime
-json-lib
-Usage:  
+* [statsmix.jar] [dl_jar]
+* [statsmix-ib-dependencies.] [dl_dep]
+ 
 ------
+##Track Examples
 The track method sends a request to the track API, and returns the XML response as a string.  See www.statsmix.com/developers/documentation for more information.
 
 Create a new StatsMix Client
