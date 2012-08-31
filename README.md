@@ -6,11 +6,11 @@ StatsMix - API access
 TODO statsmix info..?
 Download 
 --------
-* [statsmix.jar] [dl_jar]
-* [statsmix-ib-dependencies.] [dl_dep]
- 
+The jar file: [statsmix.jar] [dl_jar]
+It's dependencies: [statsmix-lib-dependencies.] [dl_dep]
+Usage 
 ------
-##Track Examples
+###Track Examples
 The track method sends a request to the track API, and returns the XML response as a string.  See www.statsmix.com/developers/documentation for more information.
 
 Create a new StatsMix Client
