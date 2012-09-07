@@ -22,23 +22,23 @@ public class Track {
 		Client smClient = new Client(API_KEY);
 		
 		//Basic Tracking.  Adds a new stat with default value of 1 to the metric.
-		smClient.track("metric_name");
+		smClient.track("Metric Name");
 		
 		//Track with a value other than one
-		smClient.track("metric_name", 5.2);
+		smClient.track("Metric Name", 5.2);
 		
 		//Track with additional properties
 		List<NameValuePair> properties = new ArrayList<NameValuePair>(2);
 		properties.add(new BasicNameValuePair("value", "5.2")); //Value is not required, it will default to one if not included
 		properties.add(new BasicNameValuePair("ref_id", "java01"));
 		properties.add(new BasicNameValuePair("generated_at", getDateTime()));
-		smClient.track("metric_name", properties);
+		smClient.track("Metric Name", properties);
 		
 		//Track with meta data
 		JSONObject meta = new JSONObject();
 		meta.put("food", "icecream");
 		meta.put("calories", 500);
-		smClient.track("metric_name", properties, meta);
+		smClient.track("Metric Name", properties, meta);
 	}
 	
 	public static String getDateTime() {
