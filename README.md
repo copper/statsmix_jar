@@ -5,6 +5,17 @@
 StatsMix
 ========
 This java library offers easy access to the StatsMix API. See www.statsmix.com/developers/documentation for more information.
+What is StatsMix?
+-----------------
+StatsMix makes it easy to track, chart, and share application and business metrics. Use StatsMix to:
+
+* Log every time a particular event happens (such as a user creating a new blog post)
+* View a real-time chart of these application events in StatsMix's web UI
+* Share the charts with users inside and outside your organization
+* Create and share custom dashboards that aggregate multiple metrics together
+  * Example dashboard: http://www.statsmix.com/d/0e788d59208900e7e3bc
+  * Example embedded dashboard: http://www.statsmix.com/example-embedded To get started, you'll need an API key for StatsMix. You can get a free developer account here: http://www.statsmix.com/try?plan=developer
+Full gem documentation is at http://www.statsmix.com/developers/java_library
 Download and Install
 --------------------
 Include these jars in your build path: <br />
