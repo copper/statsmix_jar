@@ -47,6 +47,7 @@ public class Client {
 		return request("track", "post",  properties);
 	}
 	
+	//stats functionality is undocumented and in progress. The downloadable jar will be updated when it is finished. 
 	public String listStats(int metricId)
 	{
 		return listStats(metricId, new ArrayList<NameValuePair>(2));
