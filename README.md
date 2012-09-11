@@ -2,9 +2,9 @@
 [dl_dep]: https://www.statsmix.com/download/java/statsmix-lib-dependencies.tar.gz
 [track_exmpl]: https://github.com/mcclaskc/statsmix_jar/blob/master/examples/Track.java
 
-StatsMix
+StatsMix Java Library
 ========
-This java library offers easy access to the StatsMix API. See www.statsmix.com/developers/documentation for more information.
+This Java library offers easy access to the StatsMix API. See http://www.statsmix.com/developers/documentation for more information.
 What is StatsMix?
 -----------------
 StatsMix makes it easy to track, chart, and share application and business metrics. Use StatsMix to:
