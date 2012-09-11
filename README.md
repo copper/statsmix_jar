@@ -69,7 +69,7 @@ smClient.track("Metric Name", properties);
 Track with meta data
 ```java
 JSONObject meta = new JSONObject();
-meta.put("food", "icecream");
+meta.put("food", "ice cream");
 meta.put("calories", 500);
 smClient.track("Metric Name", properties, meta);
 ```
