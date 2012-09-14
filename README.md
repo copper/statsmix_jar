@@ -2,9 +2,9 @@
 [dl_dep]: https://www.statsmix.com/download/java/statsmix-lib-dependencies.tar.gz
 [track_exmpl]: https://github.com/mcclaskc/statsmix_jar/blob/master/examples/Track.java
 
-StatsMix
+StatsMix Java Library
 ========
-This java library offers easy access to the StatsMix API. See www.statsmix.com/developers/documentation for more information.
+This library offers easy access to the StatsMix API using Java. See http://www.statsmix.com/developers/documentation for more information about the StatsMix API.
 What is StatsMix?
 -----------------
 StatsMix makes it easy to track, chart, and share application and business metrics. Use StatsMix to:
@@ -69,7 +69,7 @@ smClient.track("Metric Name", properties);
 Track with meta data
 ```java
 JSONObject meta = new JSONObject();
-meta.put("food", "icecream");
+meta.put("food", "ice cream");
 meta.put("calories", 500);
 smClient.track("Metric Name", properties, meta);
 ```
