@@ -30,6 +30,8 @@ public class Client {
 	
 	
 	// === TRACK === -----------------------------------------------------------------------------------------------
+	
+	// Available Properties:  value, generated_at, ref_id, profile_id
 	public String track(String metricName){
 		return track(metricName, new ArrayList<NameValuePair>(2));
 	}
@@ -39,7 +41,6 @@ public class Client {
 		properties.add(new BasicNameValuePair("value", Double.toString(value)));
 		return track(metricName, properties);
 	}
-	
 	public String track(String metricName, List<NameValuePair> properties, JSONObject meta)
 	{
     	properties.add(new BasicNameValuePair("meta", meta.toString()));
@@ -53,7 +54,9 @@ public class Client {
 	
 	
 	// === STATS === -----------------------------------------------------------------------------------------------
+	
 	// listStats ---------------------------------------------------------------------------------------------------
+	//Available options: limit, start_date, end_date
 	public String listStats(int metricId)
 	{
 		return listStats(metricId, new ArrayList<NameValuePair>(2));
@@ -86,6 +89,7 @@ public class Client {
 		return request(resource, "get", properties);
 	}
 	// createStat --------------------------------------------------------------------------------------------------
+	// Available properties: value, generated_at, ref_id
 	public String createStat(int metricId)
 	{
 		return createStat(metricId, new ArrayList<NameValuePair>(2));
@@ -107,6 +111,7 @@ public class Client {
 		return request("stats", "post", properties);
 	}
 	// updateStat -------------------------------------------------------------------------------------------------
+	// Available properties: value, generated_at, ref_id
 	public String updateStat(int metricId, int statId, int value)
 	{
 		List<NameValuePair> properties = new ArrayList<NameValuePair>(2);
@@ -142,7 +147,9 @@ public class Client {
 	}
 	
 	// === METRICS === ---------------------------------------------------------------------------------------------
+	
 	// listMetrics -------------------------------------------------------------------------------------------------
+	// Available options: profile_id, limit
 	public String listMetrics()
 	{
 		return listMetrics(new ArrayList<NameValuePair>(2));
@@ -170,6 +177,7 @@ public class Client {
 		return request("metrics/" + Integer.toString(metricId), "get", new ArrayList<NameValuePair>(2));
 	}
 	// createMetric ------------------------------------------------------------------------------------------------
+	// Available properties: profile_id, sharing, include_in_email
 	public String createMetric(String metricName)
 	{
 		return createMetric(metricName, new ArrayList<NameValuePair>(2));
@@ -180,6 +188,7 @@ public class Client {
 		return request("metrics", "post", properties);
 	}
 	// updateMetric ------------------------------------------------------------------------------------------------
+	// Available properties: profile_id, sharing, include_in_email
 	public String updateMetric(int metricId, List<NameValuePair> properties)
 	{
 		String id = Integer.toString(metricId);
