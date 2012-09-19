@@ -1,4 +1,4 @@
-[dl_jar]: https://www.statsmix.com/download/java/statsmix.jar
+[dl_jar]: https://www.statsmix.com/download/java/statsmix-1.1.0.jar
 [dl_dep]: https://www.statsmix.com/download/java/statsmix-lib-dependencies.tar.gz
 [track_exmpl]: https://github.com/mcclaskc/statsmix_jar/blob/master/examples/Track.java
 
@@ -23,7 +23,7 @@ Full gem documentation is at http://www.statsmix.com/developers/java_library
 Download and Install
 --------------------
 Include these jars in your build path: <br />
-The jar file: [statsmix.jar] [dl_jar] <br />
+The jar file: [statsmix-1.1.0.jar] [dl_jar] <br />
 It's dependencies: [statsmix-lib-dependencies.tar.gz] [dl_dep] <br /> 
 Links to all the depedencies if you need to resolve version errors:
 <ul>
