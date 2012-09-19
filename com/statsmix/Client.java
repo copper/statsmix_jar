@@ -58,6 +58,12 @@ public class Client {
 	{
 		return listStats(metricId, new ArrayList<NameValuePair>(2));
 	}
+	public String listStats(int metricId, int limit)
+	{
+		List<NameValuePair> options = new ArrayList<NameValuePair>(2);
+		options.add(new BasicNameValuePair("limit", Integer.toString(limit)));
+		return listStats(metricId, options);
+	}
 	public String listStats(int metricId, List<NameValuePair> options)
 	{
 		options.add(new BasicNameValuePair("metric_id", Integer.toString(metricId)));
@@ -135,16 +141,57 @@ public class Client {
 		return request(resource, "delete", properties);
 	}
 	
-	// In Dev
 	// === METRICS === ---------------------------------------------------------------------------------------------
+	// listMetrics -------------------------------------------------------------------------------------------------
+	public String listMetrics()
+	{
+		return listMetrics(new ArrayList<NameValuePair>(2));
+	}
+	public String listMetrics(int profileId)
+	{
+		List<NameValuePair> options = new ArrayList<NameValuePair>(2);
+		options.add(new BasicNameValuePair("profile_id", Integer.toString(profileId)));
+		return listMetrics(options);
+	}
+	public String listMetrics(int profileId, int limit)
+	{
+		List<NameValuePair> options = new ArrayList<NameValuePair>(2);
+		options.add(new BasicNameValuePair("profile_id", Integer.toString(profileId)));
+		options.add(new BasicNameValuePair("limit", Integer.toString(limit)));
+		return listMetrics(options);
+	}
+	public String listMetrics(List<NameValuePair> options)
+	{
+		return request("metrics", "get", options);
+	}
 	// getMetric ---------------------------------------------------------------------------------------------------
-	//public String getMetric(){return "todo";}
+	public String getMetric(int metricId)
+	{
+		return request("metrics/" + Integer.toString(metricId), "get", new ArrayList<NameValuePair>(2));
+	}
 	// createMetric ------------------------------------------------------------------------------------------------
-	//public String createMetric(){return "todo";}
+	public String createMetric(String metricName)
+	{
+		return createMetric(metricName, new ArrayList<NameValuePair>(2));
+	}
+	public String createMetric(String metricName, List<NameValuePair> properties)
+	{
+		properties.add(new BasicNameValuePair("name", metricName));
+		return request("metrics", "post", properties);
+	}
 	// updateMetric ------------------------------------------------------------------------------------------------
-	//public String updateMetric(){return "todo";}
+	public String updateMetric(int metricId, List<NameValuePair> properties)
+	{
+		String id = Integer.toString(metricId);
+		properties.add(new BasicNameValuePair("id", id));
+		String resource = "metrics/" + id + ".xml";
+		return request(resource, "put", properties);
+	}
 	// deleteMetric ------------------------------------------------------------------------------------------------
-	//public String deleteMetric(){return "todo";}
+	public String deleteMetric(int metricId)
+	{
+		return request("metrics/" + Integer.toString(metricId), "delete", new ArrayList<NameValuePair>(2));
+	}
 	
 	
 	private String request(String resource, String method, List<NameValuePair> parameters){
